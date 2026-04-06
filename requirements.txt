@@ -1,0 +1,7 @@
+flask
+flask-cors
+supabase
+python-dotenv
+bcrypt
+flask-jwt-extended
+httpx

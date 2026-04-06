@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MindEase - Login</title>
+  <link rel="stylesheet" href="css/style.css">
+  </head>
+<body>
+
+<div class="container-sm" style="min-height:100vh; display:flex; align-items:center; justify-content:center;">
+  <div class="card card-lg">
+    <h1>MindEase</h1>
+    <p class="tagline">"Wellness starts within"</p>
+
+    <div id="login-form-container">
+      <h2>Log In</h2>
+      <form id="login-form">
+        <div class="form-group">
+          <label for="login-email">Email</label>
+          <input type="email" id="login-email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="login-password">Password</label>
+          <input type="password" id="login-password" name="password" required>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Login</button>
+      </form>
+      <p style="text-align:center; margin-top:1rem;">
+        Don't have an account? <a href="#" id="show-signup" style="color:var(--primary-color); font-weight:600; cursor:pointer;">Sign Up</a>
+      </p>
+    </div>
+
+    <div id="signup-form-container" style="display:none;">
+      <h2>Create Account</h2>
+      <form id="signup-form">
+        <div class="form-group">
+          <label for="signup-email">Email</label>
+          <input type="email" id="signup-email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="signup-password">Password</label>
+          <input type="password" id="signup-password" name="password" required>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Sign Up</button>
+      </form>
+      <p style="text-align:center; margin-top:1rem;">
+        Already have an account? <a href="#" id="show-login" style="color:var(--primary-color); font-weight:600; cursor:pointer;">Log In</a>
+      </p>
+    </div>
+
+  </div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  window.location.replace('index.html');
+});
+</script>
+
+</body>
+</html>
