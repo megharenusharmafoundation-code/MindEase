@@ -8,6 +8,24 @@
   </head>
 <body>
 
+<!-- NAVIGATION -->
+<nav>
+  <div class="container">
+    <a href="#" class="logo">MindEase</a>
+    <ul>
+      <li><a href="#" data-page="welcome">Welcome</a></li>
+      <li><a href="#" data-page="habits">Habits</a></li>
+      <li><a href="#" data-page="stress">Stress Score</a></li>
+      <li><a href="#" data-page="risk">Risk & BP</a></li>
+      <li><a href="#" data-page="goals">Goals</a></li>
+      <li><a href="#" data-page="reports">Reports</a></li>
+      <li><a href="#" data-page="recommendations">Tips</a></li>
+      <li><a href="#" data-page="gratitude">Gratitude</a></li>
+      <li><a href="#" data-page="chatbot">AI Support</a></li>
+      <li><button class="login-btn" onclick="logout()">Login</button></li>
+    </ul>
+  </div>
+</nav>
 <div class="container-sm" style="min-height:100vh; display:flex; align-items:center; justify-content:center;">
   <div class="card card-lg">
     <h1>MindEase</h1>
@@ -53,10 +71,11 @@
 </div>
 
 <script>
-document.addEventListener('DOMContentLoaded', () => {
-  window.location.replace('index.html');
-});
+function logout() {
+  alert("Logged out");
+}
 </script>
+
 
 </body>
 </html>
