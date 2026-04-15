@@ -850,6 +850,7 @@
   const WEEKDAY_LABELS = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
   const GOAL_DAY_NAMES = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
   const pages = Array.from(document.querySelectorAll(".page"));
+  const navbar = document.querySelector("nav");
   const navLinks = Array.from(document.querySelectorAll("nav a[data-page]"));
   const loginBox = document.getElementById("login-form-container");
   const signupBox = document.getElementById("signup-form-container");
@@ -880,6 +881,9 @@
       pages.forEach((page) => {
         page.style.display = page.id === pageId ? "block" : "none";
       });
+      if (navbar) {
+        navbar.style.display = pageId === "login" ? "none" : "";
+      }
       navLinks.forEach((link) => {
         const isActive = link.dataset.page === pageId;
         link.classList.toggle("active", isActive);
